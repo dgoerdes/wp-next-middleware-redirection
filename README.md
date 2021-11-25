@@ -1,3 +1,12 @@
+# WP Next Middleware Redirection
+
+Uses next.js middleware to call a remote API connected to a headless WP with redirection plugin
+to grab the specified redirects and handle them.
+
+Example: http://localhost:3000/r1/ should redirect you with status 301 to http://localhost:3000
+
+## Boilerplate
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
