@@ -60,11 +60,13 @@ const getCmsRedirects = async (): Promise<CmsRedirect[]> => {
   const apiUrl = "https://api-qa.fhtw.ovl.cloud/redirects";
   console.log("FETCH REDIRECTS: ", apiUrl);
 
-  const req = await fetch(apiUrl, {
+  const res = await fetch(apiUrl, {
     method: "GET",
   });
 
-  return req.json();
+  console.log("REQUEST: ", res);
+
+  return res.json();
 };
 
 const handlePassMatch = (
